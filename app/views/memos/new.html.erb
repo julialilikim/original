@@ -1,0 +1,18 @@
+<!--<h1>Memos#new</h1>-->
+<!--<p>Find me in app/views/memos/new.html.erb</p>-->
+
+<!--form_for 모델 do |f|-->
+<!--form_for란, 모델과 연동이 되는 폼태그로, 수정시 매우 용이하다!-->
+<!--모델이 기존에 만들어져있는지 아닌지 부터 확인해줌. -->
+<!--토큰도 필요없다.-->
+<!--end-->
+
+<!--<%= bootstrap_form_for @memo do |f|%>-->
+<!--<%=f.hidden_field :user_id, value: current_user.id%>-->
+<!--<%=f.text_field :title, label: "제목"%><br>-->
+<!--<%= f.text_area :content, :class => "tinymce", :rows => 40, :cols => 120 %>-->
+<!--<%=f.submit '작성'%>-->
+<!--<%= tinymce %>-->
+<!--<%end%>-->
+
+<%=render 'form'%>
